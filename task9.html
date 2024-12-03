@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let students = [
+  {name: "Daniel",grade: 80},
+    {name: "Michał",grade: 77},
+    {name: "Jakub",grade: 88},
+    {name: "Sylwia",grade: 95},
+    {name: "Amelia",grade: 68}
+  ]
+  for(let i = 0; i <= students.length; i++)
+  {
+    if(students[i].grade >= 100)
+    {
+      document.write(`${students[i].name} otrzmał ocene A <br>`)
+    }
+    if(students[i].grade >=90 && students[i].grade <100)
+    {
+      document.write(`${students[i].name} otrzmał ocene B <br>`)
+    }
+    if(students[i].grade >=80 && students[i].grade < 90)
+    {
+      document.write(`${students[i].name} otrzmał ocene C <br>`)
+    }
+    if(students[i].grade >70 && students[i].grade < 80){
+      document.write(`${students[i].name} otrzmał ocene D <br>`)
+    }
+    if(students[i].grade < 70)
+    {
+      document.write(`${students[i].name} otrzmał ocene F <br>`)
+    }
+
+  }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 56;
+    let b = 90
+    while(b!==0){
+        let copyB = b;
+        b = a % b;
+        a = copyB
+    }
+    document.write(`${a}`);
+</script>
+</body>
+</html>
